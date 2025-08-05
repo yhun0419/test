@@ -30,9 +30,7 @@ conda env create -f SDIK.yml
 # Activate environment
 conda activate SDIK
 ```
-<br>
-
-
+<br><br>
 ## 2. Download datasets
 
 All the datasets work with DGL 0.5 or later.
@@ -40,7 +38,7 @@ All the datasets work with DGL 0.5 or later.
 ### 2.1 TU datasets
 
 Nothing to do. The TU datasets are automatically downloaded.
-<br>
+<br><br>
 
 ## 3. run_codes
 
@@ -54,7 +52,7 @@ The training and network parameters for each dataset and network is stored in a 
 ```
 bash run_all_SDIK.sh | tee total_output.log
 ```
-<br>
+<br><br>
 ## 4. Add Subgraph counting
 To incorporate subgraph counting, please follow the approach provided in https://github.com/magic62442/subgraph-counting to generate subgraph counts for each node. The resulting subgraph count file for each dataset is formatted as a 2D table with dimensions (total number of nodes across all graphs in the dataset, number of k-node graphlet types).
 
