@@ -1,6 +1,5 @@
 # SDIK
 ## 1. SDIK installation
-<br>
 
 ### 1.1 Setup Conda
 
@@ -15,7 +14,6 @@ chmod +x ~/miniconda.sh
 
 source ~/.bashrc          # For Linux
 ```
-<br>
 
 ## 1.2 Setup Python environment for GPU
 
@@ -34,16 +32,15 @@ conda activate SDIK
 ```
 <br><br>
 
+
 ## 2. Download datasets
 
 All the datasets work with DGL 0.5 or later.
 
-<br>
-
 ### 2.1 TU datasets
 
 Nothing to do. The TU datasets are automatically downloaded.
-<br>
+
 
 ## 3. run_codes
 
