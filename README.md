@@ -1,4 +1,4 @@
-# test
+# SDIK
 ## 1. SDIK installation
 <br>
 
@@ -24,6 +24,7 @@ DGL 0.9.1.post1 requires CUDA **11.6**.
 For Ubuntu **22.04**
 ```
 # Setup CUDA 11.6 on Ubuntu 22.04
+The PyTorch version used in this project is 1.13.1, which corresponds to CUDA 11.6. For compatibility with other CUDA versions, please refer to the official documentation: https://pytorch.org/get-started/previous-versions/
 
 # Install python environment
 conda env create -f SDIK.yml
@@ -56,3 +57,8 @@ The training and network parameters for each dataset and network is stored in a 
 ```
 bash run_all_SDIK.sh | tee total_output.log
 ```
+
+## 4. Add Subgraph counting
+To incorporate subgraph counting, please follow the approach provided in https://github.com/magic62442/subgraph-counting to generate subgraph counts for each node. The resulting subgraph count file for each dataset is formatted as a 2D table with dimensions (total number of nodes across all graphs in the dataset, number of k-node graphlet types).
+
+
